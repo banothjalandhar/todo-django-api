@@ -30,33 +30,23 @@ This is a simple **Todo List application** built with **Django** and **Django RE
 
 1. **Clone the repository**
 
-```bash
+
 git clone https://github.com/banothjalandhar/todo-django-api.git
 cd todo-django-api
 Create virtual environment (optional but recommended)
 
-bash
-Copy
-Edit
 python -m venv env
 source env/bin/activate    # On Windows: env\Scripts\activate
 Install dependencies
 
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Apply migrations
 
-bash
-Copy
-Edit
+
 python manage.py migrate
 Run the server
 
-bash
-Copy
-Edit
 python manage.py runserver
 🌐 Endpoints
 Web UI
@@ -82,9 +72,7 @@ Supports:
 ✅ Ordering (?ordering=title)
 
 📁 Folder Structure
-bash
-Copy
-Edit
+
 todo_project/
 │
 ├── tasks/                  # App with views, models, serializers, urls
