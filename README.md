@@ -33,3 +33,67 @@ This is a simple **Todo List application** built with **Django** and **Django RE
 ```bash
 git clone https://github.com/banothjalandhar/todo-django-api.git
 cd todo-django-api
+Create virtual environment (optional but recommended)
+
+bash
+Copy
+Edit
+python -m venv env
+source env/bin/activate    # On Windows: env\Scripts\activate
+Install dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Apply migrations
+
+bash
+Copy
+Edit
+python manage.py migrate
+Run the server
+
+bash
+Copy
+Edit
+python manage.py runserver
+🌐 Endpoints
+Web UI
+/ → Task list
+
+/create/ → Add new task
+
+/update/<id>/ → Edit task
+
+/delete/<id>/ → Delete task
+
+API Endpoints
+Method	Endpoint	Description
+GET	/api/v1/tasks/	List all tasks
+GET	/api/v1/tasks/1/	Retrieve a task
+POST	/api/v1/tasks/	Create new task
+PUT	/api/v1/tasks/1/	Update task
+DELETE	/api/v1/tasks/1/	Delete task
+
+Supports:
+✅ Pagination
+✅ Search (?search=title)
+✅ Ordering (?ordering=title)
+
+📁 Folder Structure
+bash
+Copy
+Edit
+todo_project/
+│
+├── tasks/                  # App with views, models, serializers, urls
+├── todo_project/           # Main Django project settings
+├── templates/              # HTML templates
+├── db.sqlite3              # Default DB
+└── manage.py
+📄 License
+This project is open-source and available under the MIT License.
+
+🙋‍♂️ Author
+Developed by [Banoth Jalandhar](https://github.com/banothjalandhar)
